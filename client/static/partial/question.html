@@ -1,0 +1,15 @@
+
+ <div id="Questiondiv" ng-controller='QuestionController'>
+ 	
+    <ul ng-repeat="question in questions">
+<div>
+<input type="checkbox" ng-model="checkstatus" ng-change="getCheckedValue(checkstatus,question.id)">
+
+    	Question: {{question.question }}</div>
+    	<div>Answer: {{question.answer}}</div>
+
+    </ul>  
+
+<button ng-click="getMoreQuestion()">MORE...</button>
+
+</div>

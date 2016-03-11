@@ -1,0 +1,19 @@
+
+ <div id="Quizdiv" ng-controller='QuizController'>
+
+    <ul ng-repeat="question in questions">
+    	<form>
+<div>Question: {{question.question }}</div>
+
+    	<div ng-model="question.divid1.id" ng-style="{color:question.divid1.color}"><input type="radio" value="1" ng-model="question._id" ng-change="isAnswer(1,question, question.divid1)" > 
+    		Option1: {{question.option1}}</div>
+    	<div ng-model="question.divid2.id" ng-style="{color:question.divid2.color}"><input type="radio" value="2" ng-model="question._id" ng-change="isAnswer(2,question, question.divid2)"> 
+    		Option2: {{question.option2}}</div>
+    	<div ng-model="question.divid3.id" ng-style="{color:question.divid3.color}"><input type="radio" value="3" ng-model="question._id" ng-change="isAnswer(3,question, question.divid3)"> 
+    		Option3: {{question.option3}}</div>
+</form>
+    </ul>  
+
+
+
+</div>
